@@ -1,0 +1,2 @@
+alert('projects loading');
+   

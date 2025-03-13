@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- proudly sponsored by by Christopher @Slap.js CEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>FRENDO LSK</title>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css" rel='stylesheet'>
+    <link rel="stylesheet"  href="index.css">
+<link rel="icon" type="image/jpg" href="/assets/profile.jpg">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+   <nav class="navbar">
+       
+       <ul class="navlist">
+        
+           <li>
+              <a href="#">
+                  <i class="fa fa-home">
+                  
+              </i>
+              </a>
+           </li>
+           <li>
+               <a href="./skills/skills.html">
+                 <i class="fa fa-code"></i>
+               </a>
+           </li>
+           <li>
+               <a href="https://github.com/Dalliso-banda">
+                   <i class="fa fa-github">
+                   
+               </i>
+               </a>
+           </li>
+             <li>
+               <a href="mailto: dalisobanda156@gmail.com">
+                   <i class="fa fa-envelope"></i>
+               </a>
+           </li>
+           <li>
+               <a href="https://www.facebook.com/profile.php?id=61556655635814&mibextid=ZbWKwL">
+                   <i class="fa fa-facebook">
+                       
+                   </i>
+               </a>
+           </li>
+           <li>
+               <a href="./about/about.html">
+                   
+                       <i class="fa fa-info"></i>
+                   
+               </a>
+           </li>
+           <li>
+               <a href="./projects/projects.html">
+              <i class="fa fa-laptop"></i>
+               </a>
+           </li>
+                                                    
+       </ul>
+   </nav>
+   <article>
+       <img src="/assets/profile.jpeg">
+ 
+          <h3>My apartment the www</h3>
+      <p>
+          Let me give you a tour around my slice of the www.This site was made in CSS,HTML and vanila Javascript to show my strong understanding on the fundamentals of web development.
+      </p>
+      <p>
+          This website waz designed on a phone in the languages above note it may not be responsive on all screen sizers because it was made for mobile devices (phones ) rest assured enjoy your stay
+      </p>
+      
+      <ul>
+          <li>
+                        
+       <i class="fa fa-code"></i>This icon is a direction to my skill set.
+          </li>
+          <li>
+                        
+       <i class="fa fa-laptop"></i>This icon is a direction to my projects.
+          </li>
+        <li>
+                        
+       <i class="fa fa-info"> </i> This icon is a direction to my Bio intrests,Hobbies and strengths
+          </li>  
+      
+     </ul>
+          
+      
+   </article>
+   
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script> 
+
+</html>

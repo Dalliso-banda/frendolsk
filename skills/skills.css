@@ -1,0 +1,87 @@
+body{
+    background: white;
+    height: 100vh;  
+    margin: 0;
+    display: flex;
+    
+    
+}
+
+.navbar{
+    background: #acacacd6;
+    width: 15%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    overflow-y: auto;
+    
+    
+    
+}
+.navlist{
+    margin-left: ;
+    flex-wrap: nowrap;
+}
+
+.navbar  .navlist img{
+    
+    width: 80%;
+    border-radius: 90%;
+    border: 2px solid #40cbffb4;
+    margin-left: 0;
+}
+.navbar ul li{
+    list-style: none;
+    margin-left: -50%;
+    
+}
+.navbar ul li i{
+    font-size: 2em;
+    color: black;
+    
+}
+.navbar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+   
+}
+
+.navbar ul li a{
+    color: white;
+   
+   
+}
+.navbar ul li:hover{
+    background: blue;
+    width: 100%;
+}
+.skills{
+    margin-left: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: ;  
+    
+}
+span{
+    background: black;
+    border-radius: 15px;
+    color: white;
+    opcity: 0.6;
+    font-size: 1.5em;
+}
+
+
+@media only screen and (min-width:992px) and (max-width:1199px){
+    .navbar ul li i{
+    font-size: 4em;
+    color: black;
+    
+}
+span{
+    font-size: 2em;
+}
+     
+    
+}
