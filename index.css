@@ -1,93 +1,140 @@
-body{
-    background: white;
+body {
+    background: #0b0f14; /* deep black background */
     height: 100vh;  
     margin: 0;
     display: flex;
-    font-family: serif;
-    
-    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e5e5e5; /* light gray text for contrast */
 }
 
-.navbar{
-    background: #acacacd6;
+.navbar {
+    background: #121418; /* matte black for sidebar */
     width: 15%;
     height: 100vh;
     display: flex;
     justify-content: center;
     position: fixed;
     overflow-y: auto;
-    
-    
+    box-shadow: 2px 0 10px rgba(0,0,0,0.8);
 }
-.navlist{
-    margin-left: ;
+
+.navlist {
     flex-wrap: nowrap;
 }
 
-.navbar  .navlist img{
-    
+.navbar .navlist img {
     width: 80%;
     border-radius: 90%;
-    border: 2px solid #40cbffb4;
+    border: 3px solid #40cbff; /* cyan glow */
     margin-left: 0;
+    transition: 0.3s ease;
 }
-.navbar ul li{
-    list-style: none;
-    margin-left: -50%;
-    
-}
-.navbar ul li i{
-    font-size: 2em;
-    color: black;
-    
-}
-.navbar ul{
-    display: flex;
-    flex-direction: column;
-    gap: 10%;
-   
+.navbar .navlist img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #40cbff80;
 }
 
-.navbar ul li a{
-    color: white;
-    font: 1em;
-   
+.navbar ul li {
+    list-style: none;
+    margin-left: -50%;
+    transition: background 0.3s ease;
 }
-.navbar ul li:hover{
-    background: blue;
+
+.navbar ul li i {
+    font-size: 2em;
+    color: #bbb; /* softer gray for icons */
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+.navbar ul li i:hover {
+    color: #40cbff; /* cyan hover */
+    transform: scale(1.2);
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* more breathing space */
+    margin-top: 40px;
+}
+
+.navbar ul li a {
+    color: #eee;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.navbar ul li:hover {
+    background: #1f2630;
     width: 100%;
+    border-left: 4px solid #40cbff;
 }
-article{
-    padding: 20%;
+
+article {
+    padding: 10% 20%;
     animation-name: artin;
-    animation-duration: 2s;
-    animation-fill-name: ease-in;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
 }
-article img{
-    height: 20%;
-    border-radius: 80%;
-    border: 0.5em solid #8098ffd2;
+
+article img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid #40cbffb4;
+    box-shadow: 0 0 30px rgba(64, 203, 255, 0.3);
+    transition: 0.3s ease;
 }
-@keyframes artin{
-    0%{
-        right: 0;
-        background: black;
-        transform: rotatey(46deg);
+article img:hover {
+    transform: rotate(3deg) scale(1.05);
+    box-shadow: 0 0 40px rgba(64, 203, 255, 0.6);
+}
+
+article h3 {
+    font-size: 2em;
+    color: #40cbff;
+    margin-top: 20px;
+}
+
+article p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+article ul {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+article ul li {
+    margin-bottom: 15px;
+    font-size: 1em;
+    color: #ddd;
+}
+article ul li i {
+    color: #40cbff;
+    margin-right: 10px;
+}
+
+@keyframes artin {
+    0% {
+        transform: translateY(50px);
         opacity: 0;
     }
-}
-@media only screen and (min-width:992px) and (max-width:1199px){
-    .navbar ul li i{
-    font-size: 4em;
-    color: black;
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
-    article{
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+    .navbar ul li i {
         font-size: 3em;
     }
-    article img{
-        border: 0.2em solid #8098ffd2;
+    article {
+        font-size: 1.5em;
     }
-    
+    article img {
+        border: 0.2em solid #40cbffb4;
+    }
 }
-     
-  
